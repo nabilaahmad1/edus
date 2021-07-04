@@ -1,0 +1,32 @@
+$(".search button .cross").click(function(){
+     $(".search").hide();
+});
+$(".main .mid .sicon .sh").click(function(){
+     $(".search").toggle();
+});
+$('.popular1').owlCarousel({
+    items:3,
+    rtl:true,
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+    dots:true,
+})
+$('.rev').owlCarousel({
+    items:1,
+    loop:true,
+    margin:10,
+    dots:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:2
+        }
+    }
+})
